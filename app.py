@@ -16,8 +16,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 def getdriver():
     options = Options()
 
-    s = Service(ChromeDriverManager().install())
-    exe_path = '/Users/pixis/Downloads/chromedriver'
+    #s = Service(ChromeDriverManager().install())
+    exe_path = os.environ.get("CHROMEDRIVER_PATH")
     driver = webdriver.Chrome(exe_path )
     return driver
 
