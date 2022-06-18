@@ -19,6 +19,7 @@ def getdriver():
     #s = Service(ChromeDriverManager().install())
     driver = webdriver.Remote(
       command_executor='https://anirudhjm_01m5Ny:3z5Hx6obs9hesLmAeA3Z@hub-cloud.browserstack.com/wd/hub')
+    return driver
                   
 
 
