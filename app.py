@@ -72,7 +72,7 @@ if st.button('Scrape Data') and link is not None:
     else:
         st.write('Page not loading try again in sometime')
         browser.quit()
-        quit()
+        sys.exit('facebook blocked you')
 
     scroll_to_bottom(browser)
 
